@@ -1,0 +1,47 @@
+{
+  "name": "node-express",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=app nodemon app.js",
+    "lint": "eslint app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "chalk": "^2.4.1",
+    "debug": "^4.1.0",
+    "ejs": "^2.6.1",
+    "eslint": "^5.8.0",
+    "express": "^4.13.4",
+    "jquery": "^3.3.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.5",
+    "popper": "^1.0.1",
+    "popper.js": "^1.14.3",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  }
+}
